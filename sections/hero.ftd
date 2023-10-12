@@ -1,0 +1,24 @@
+
+;; -- ftd.background-image bg-image: 
+;; src: $wrapper.image
+;; repeat: no-repeat 
+;; position: center
+
+-- component wrapper:
+caption name:
+optional body subtitle:
+ftd.image-src image:
+
+
+-- ftd.column:
+width: fill-container
+;; background.image: $bg-image 
+
+-- ftd.text: $wrapper.name
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: wrapper
+
