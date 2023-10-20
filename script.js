@@ -177,13 +177,13 @@ document.addEventListener("DOMContentLoaded", function () {
         sectionTitleSquare[i].style.transform = 'translate(-50%, -50%)';
     }
 
-    const script = document.createElement('script');
-    script.src = '/splitting.js';
-    script.async = true;
-    script.onload = function () {
-        Splitting();
-    };
-    document.body.appendChild(script);
+    // const script = document.createElement('script');
+    // script.src = '/splitting.js';
+    // script.async = true;
+    // script.onload = function () {
+    //     Splitting();
+    // };
+    // document.body.appendChild(script);
 
     const script2 = document.createElement('script');
     script2.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js';
@@ -204,29 +204,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const gsapSq = gsap.utils.toArray('.section-title__square');
 
-            script.onload = function () {
-                Splitting();
-                gTlHero.from(".title", 1, { opacity: 0, yPercent: 130, stagger: 0.06, ease: "back.out" });
-                gTlHero.from(".char", 1, { opacity: 0, yPercent: 130, stagger: 0.06, ease: "back.out" });
+            gTlHero.from(".title", 1, { opacity: 0, yPercent: 130, stagger: 0.06, ease: "back.out" });
+            gTlHero.from(".char", 1, { opacity: 0, yPercent: 130, stagger: 0.06, ease: "back.out" });
 
-                gsap.from("#about-title", 1, { opacity: 0, yPercent: 130, stagger: 0.06, ease: "back.out", scrollTrigger: { trigger: '#about'} });
-                gsap.from("#skills-title", 1, { opacity: 0, yPercent: 130, stagger: 0.06, ease: "back.out", scrollTrigger: { trigger: '#skills'} });
-                gsap.from("#projects-title", 1, { opacity: 0, yPercent: 130, stagger: 0.06, ease: "back.out", scrollTrigger: { trigger: '#skills'} });
+            gsap.from("#about-title", 1, { opacity: 0, yPercent: 130, stagger: 0.06, ease: "back.out", scrollTrigger: { trigger: '#about' } });
+            gsap.from("#skills-title", 1, { opacity: 0, yPercent: 130, stagger: 0.06, ease: "back.out", scrollTrigger: { trigger: '#skills' } });
+            gsap.from("#projects-title", 1, { opacity: 0, yPercent: 130, stagger: 0.06, ease: "back.out", scrollTrigger: { trigger: '#skills' } });
 
-                gsapSq.forEach((gSq, i) => {
-                    const rotat = gsap.from(gSq, 3, { rotation: 720 });
-                    ScrollTrigger.create({
-                        trigger: gSq,
-                        animation: rotat,
-                        start: 'top bottom',
-                        scrub: 1.9
-                    });
+            gsapSq.forEach((gSq, i) => {
+                const rotat = gsap.from(gSq, 3, { rotation: 720 });
+                ScrollTrigger.create({
+                    trigger: gSq,
+                    animation: rotat,
+                    start: 'top bottom',
+                    scrub: 1.9
                 });
+            });
 
-                Cursor();
+            Cursor();
 
-                Skills();
-            };
+            Skills();
 
             // gsap.to('.title_paralax', {
             //     scrollTrigger: {
