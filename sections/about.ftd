@@ -1,0 +1,65 @@
+
+
+-- component wrapper:
+caption name:
+optional body subtitle:
+;; optional integer x: $lottie-player.start(type = $wrapper.type)
+
+-- ftd.column:
+id: about
+height.fixed.vh: 100
+width: fill-container
+spacing.fixed.px: 100
+padding-horizontal.px: 40
+
+-- ftd.row:
+id: about-header
+width: fill-container
+
+-- ftd.text: $wrapper.name
+id: about-title
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+z-index: 2
+classes: gradient-text
+
+-- ftd.container:
+anchor.id: about-header
+top.percent: 50
+left.percent: 50
+height.fixed.px: 130
+width.fixed.px: 130
+z-index: 1
+border-width.px: 1
+border-color: #4b4b4b
+classes: section-title__square
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+
+-- ftd.text: $wrapper.subtitle
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+text-align: justify
+max-width.fixed.px: 586
+
+-- ftd.rive:
+id: about-rive
+src: $assets.files.assets.about.riv
+height.fixed.px: 400
+width.fixed.px: 400
+
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: wrapper
+
+

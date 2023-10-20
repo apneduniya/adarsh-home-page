@@ -1,0 +1,94 @@
+
+
+
+-- component wrapper:
+string project-id:
+integer z-index:
+caption title:
+ftd.image-src background-img: 
+optional string background-color:
+optional string title-color:
+optional string subtitle:
+optional ftd.image-src pic-1:
+optional ftd.image-src pic-2:
+
+-- ftd.container:
+width: fill-container
+background.solid if { wrapper.background-color != NULL }: $wrapper.background-color
+background.solid: #1E1E1E
+sticky: true
+top.px: 0
+left.px: 0
+z-index: $wrapper.z-index
+
+-- ftd.column:
+id: $wrapper.project-id
+height.fixed.vh: 100
+width: fill-container
+padding.px: 100
+
+;; Background image
+-- ftd.image:
+fit: cover
+src: $wrapper.background-img
+height.fixed.vh: 100
+width: fill-container
+anchor.id: $wrapper.project-id
+top.px: 0
+left.px: 0
+z-index: -1
+
+-- ftd.text: $wrapper.title
+role: $inherited.types.heading-large
+color if { wrapper.title-color }: $wrapper.title-color
+color: #ffffff
+text-transform: uppercase 
+margin-bottom.px: 20
+
+-- ftd.text: $wrapper.subtitle
+if: { wrapper.subtitle }
+role: $inherited.types.heading-small
+color: #ffffff
+text-transform: uppercase
+margin-bottom.px: 60
+
+-- ftd.column:
+height.fixed.px: 1
+width.fixed.percent: 68
+background.solid: $wrapper.title-color
+
+-- end: ftd.column
+
+;; -- ftd.column:
+;; anchor.id: $wrapper.project-id
+;; right.px: 100
+;; bottom.px: 100
+
+-- ftd.image:
+if: { wrapper.pic-2 }
+src: $wrapper.pic-2
+height.fixed.px: 306
+width.fixed.px: 602
+anchor: parent
+bottom.px: 240
+right.px: -50
+
+-- ftd.image:
+if: { wrapper.pic-1 }
+src: $wrapper.pic-1
+height.fixed.px: 306
+width.fixed.px: 602
+anchor: parent
+bottom.px: 100
+right.px: 100
+
+;; -- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.container
+
+-- end: wrapper
+
+
+

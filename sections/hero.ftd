@@ -1,8 +1,4 @@
 
-;; -- ftd.background-image bg-image: 
-;; src: $wrapper.image
-;; repeat: no-repeat 
-;; position: center
 
 -- component wrapper:
 caption name:
@@ -10,15 +6,155 @@ optional body subtitle:
 ftd.image-src image:
 
 
--- ftd.column:
+-- ftd.row:
+id: hero
+height.fixed.vh: 100
 width: fill-container
-;; background.image: $bg-image 
+align-content: center
 
--- ftd.text: $wrapper.name
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
+;; Background image
+-- ftd.image:
+id: bg-absolute
+fit: cover
+;; opacity: 0.044
+src: $wrapper.image
+height: fill-container
+width: fill-container
+padding-horizontal.px: 40
+anchor.id: hero
+top.percent: -20
+z-index: 0
+
+
+-- ftd.column:
+align-self: center
+spacing.fixed.px: 20
+z-index: 1
+
+;; -- ftd.text: $wrapper.name
+;; id: name
+;; role: $inherited.types.heading-hero
+;; color: $inherited.colors.text-strong
+;; width: fill-container
+;; text-align: center
+;; style: bold
+;; classes: gradient-text, title
+
+-- ftd.column:
+classes: title
+
+
+-- ftd.row:
+id: name
+spacing.fixed.px: 5
+
+
+-- ftd.text: A
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+classes: gradient-text, char
+
+-- ftd.text: D
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+classes: gradient-text, char
+
+-- ftd.text: A
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+classes: gradient-text, char
+
+-- ftd.text: R
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+classes: gradient-text, char
+
+-- ftd.text: S
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+classes: gradient-text, char
+
+-- ftd.text: H
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+classes: gradient-text, char
+
+
+-- ftd.text: G
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+margin-left.px: 10
+classes: gradient-text, char
+
+-- ftd.text: U
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+classes: gradient-text, char
+
+-- ftd.text: P
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+classes: gradient-text, char
+
+-- ftd.text: T
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+classes: gradient-text, char
+
+-- ftd.text: A
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+classes: gradient-text, char
+
+-- end: ftd.row
 
 -- end: ftd.column
+
+
+-- ftd.text: $wrapper.subtitle
+id: subtitle
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+width: fill-container
+text-align: center
+classes: char
+
+-- end: ftd.column
+
+-- end: ftd.row
 
 -- end: wrapper
 
