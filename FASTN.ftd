@@ -1,7 +1,7 @@
 -- import: fastn
 
 -- fastn.package: apneduniya.github.io/adarsh-home-page
-favicon: /-/apneduniya.github.io/adarsh-home-page/favicon.ico
+;; favicon: /-/apneduniya.github.io/adarsh-home-page/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/dark-mode-switcher
