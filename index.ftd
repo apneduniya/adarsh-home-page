@@ -1,13 +1,38 @@
+-- import: apneduniya.github.io/adarsh-home-page/components/navbar
 -- import: apneduniya.github.io/adarsh-home-page/sections/hero
+-- import: apneduniya.github.io/adarsh-home-page/sections/about
+-- import: apneduniya.github.io/adarsh-home-page/sections/skills
+-- import: apneduniya.github.io/adarsh-home-page/sections/projects
+-- import: apneduniya.github.io/fastn-blog/components/footer
 
 
 -- ds.page:
 
 
+-- navbar.wrapper:
+
 -- hero.wrapper: Adarsh Gupta
 image: $assets.files.assets.bg-absolute.svg
 
 Full Stack Developer, Freelancer, Bug creator, Community Person
+
+
+-- about.wrapper: About
+
+Hey 👋!! I am Adarsh 
+Having good knowledge in field of web development. 
+I build eye catching and user 
+friendly and responsive websites. 
+I might be a good choice for your 
+web development.
+
+
+-- skills.wrapper: 
+
+-- projects.wrapper:
+
+-- footer.wrapper:
+copywrite: @2023 Adarsh Gupta
 
 -- end: ds.page
 

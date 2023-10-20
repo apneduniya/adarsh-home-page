@@ -1,0 +1,101 @@
+
+
+-- component wrapper:
+
+
+-- ftd.row:
+anchor: window
+top.px: 0
+left.px: 0
+width: fill-container
+max-width.fixed.px: 1100
+padding-vertical.px: 30
+padding-horizontal.px: 40
+z-index: 9999999
+spacing: space-between
+
+-- ftd.container:
+cursor: pointer
+classes: cursor-link
+
+-- ftd.row:
+padding-vertical.px: 12
+padding-horizontal.px: 28
+background.solid: $inherited.colors.background.step-1
+border-radius.px: 20
+spacing.fixed.px: 1
+
+-- ftd.text: Adarsh.
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+
+-- ftd.column: 
+height.fixed.px: 3
+width.fixed.px: 13
+background.solid: $inherited.colors.custom.one
+border-radius.px: 4
+align-self: end
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.container
+
+-- ftd.row:
+padding-vertical.px: 12
+padding-horizontal.px: 28
+background.solid: $inherited.colors.background.step-1
+border-radius.px: 20
+spacing.fixed.px: 40
+
+-- ftd.text: Home
+role: $inherited.types.copy-regular
+style: bold
+color: $inherited.colors.text
+cursor: pointer
+classes: cursor-link
+link: #hero
+
+-- ftd.text: About
+role: $inherited.types.copy-regular
+style: bold
+color: $inherited.colors.text
+cursor: pointer
+classes: cursor-link
+link: #about
+
+-- ftd.text: Skills
+role: $inherited.types.copy-regular
+style: bold
+color: $inherited.colors.text
+cursor: pointer
+classes: cursor-link
+link: #skills
+
+-- ftd.text: Projects
+role: $inherited.types.copy-regular
+style: bold
+color: $inherited.colors.text
+cursor: pointer
+classes: cursor-link
+link: #projects
+
+-- ftd.text: Contact
+role: $inherited.types.copy-regular
+style: bold
+color: $inherited.colors.text
+cursor: pointer
+classes: cursor-link
+link: mailto:thatsmeadarshgupta@gmail.com
+
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: wrapper
+
+
+
+

@@ -1,0 +1,195 @@
+
+
+
+-- component wrapper:
+
+
+-- ftd.column:
+id: skills
+height.fixed.px: 1100
+width: fill-container
+
+-- ftd.row:
+id: skills-first-row
+height.fixed.px: 300
+width: fill-container
+
+
+-- ftd.image:
+id: skills-css-icon
+src: $assets.files.assets.css-icon.png
+anchor.id: skills-first-row
+top.px: 106
+left.px: 121
+height.fixed.px: 120
+width.fixed.px: 120
+classes: skills-icon
+
+-- ftd.image:
+id: skills-python-icon
+src: $assets.files.assets.python-icon.png
+anchor.id: skills-first-row
+top.px: 38
+left.px: 514
+height.fixed.px: 120
+width.fixed.px: 120
+classes: skills-icon
+
+-- ftd.image:
+id: skills-react-icon
+src: $assets.files.assets.react-icon.png
+anchor.id: skills-first-row
+top.px: 70
+left.px: 857
+height.fixed.px: 120
+width.fixed.px: 120
+classes: skills-icon
+
+-- ftd.image:
+id: skills-html-icon
+src: $assets.files.assets.html-icon.png
+anchor.id: skills-first-row
+top.px: 190
+left.px: 1278
+height.fixed.px: 120
+width.fixed.px: 120
+classes: skills-icon
+
+-- end: ftd.row
+
+-- ftd.row:
+id: skills-second-row
+height.fixed.px: 300
+width: fill-container
+align-content: center
+
+
+-- ftd.image:
+id: skills-mongodb-icon
+src: $assets.files.assets.mongodb-icon.png
+anchor.id: skills-second-row
+top.px: 121
+left.px: 46
+height.fixed.px: 120
+width.fixed.px: 120
+classes: skills-icon
+
+-- ftd.image:
+id: skills-git-icon
+src: $assets.files.assets.git-icon.png
+anchor.id: skills-second-row
+top.px: -20
+left.px: 360
+height.fixed.px: 120
+width.fixed.px: 120
+classes: skills-icon
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: Skills
+id: skills-title
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+z-index: 2
+classes: gradient-text
+
+-- ftd.text: SOME OF THE TECHNOLOGIES WHICH I KNOW...
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+width: fill-container
+text-align: center
+z-index: 2
+
+-- ftd.container:
+anchor.id: skills-second-row
+top.percent: 50
+left.percent: 50
+height.fixed.px: 130
+width.fixed.px: 130
+z-index: 1
+border-width.px: 1
+border-color: #4b4b4b
+classes: section-title__square
+
+-- end: ftd.column
+
+-- ftd.image:
+id: skills-nextjs-icon
+src: $assets.files.assets.nextjs-icon.png
+anchor.id: skills-second-row
+top.px: -60
+left.px: 1031
+height.fixed.px: 120
+width.fixed.px: 120
+classes: skills-icon
+
+-- ftd.image:
+id: skills-cpp-icon
+src: $assets.files.assets.cpp-icon.png
+anchor.id: skills-second-row
+top.px: 141
+left.px: 1078
+height.fixed.px: 120
+width.fixed.px: 120
+classes: skills-icon
+
+-- end: ftd.row
+
+-- ftd.row:
+id: skills-third-row
+height.fixed.px: 300
+width: fill-container
+
+
+-- ftd.image:
+id: skills-js-icon
+src: $assets.files.assets.js-icon.png
+anchor.id: skills-third-row
+top.px: 45
+left.px: 160
+height.fixed.px: 120
+width.fixed.px: 120
+classes: skills-icon
+
+-- ftd.image:
+id: skills-vscode-icon
+src: $assets.files.assets.vscode-icon.png
+anchor.id: skills-third-row
+top.px: 126
+left.px: 377
+height.fixed.px: 120
+width.fixed.px: 120
+classes: skills-icon
+
+-- ftd.image:
+id: skills-tailwindcss-icon
+src: $assets.files.assets.tailwindcss-icon.png
+anchor.id: skills-third-row
+top.px: 146
+left.px: 861
+height.fixed.px: 120
+width.fixed.px: 120
+classes: skills-icon
+
+-- ftd.image:
+id: skills-wordpress-icon
+src: $assets.files.assets.wordpress-icon.png
+anchor.id: skills-third-row
+top.px: 0
+left.px: 1246
+height.fixed.px: 120
+width.fixed.px: 120
+classes: skills-icon
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: wrapper
+
+
+

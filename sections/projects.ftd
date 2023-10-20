@@ -1,0 +1,84 @@
+-- import: apneduniya.github.io/adarsh-home-page/components/project-card
+
+
+-- component wrapper:
+
+
+-- ftd.column:
+id: projects
+width: fill-container
+
+;; Heading
+-- ftd.row:
+height.fixed.vh: 100
+width: fill-container
+align-content: center
+sticky: true
+top.px: 0
+left.px: 0
+z-index: 1
+
+
+-- ftd.column:
+id: projects-heading-container
+width: fill-container
+align-self: center
+
+-- ftd.text: Projects
+id: projects-title
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+width: fill-container
+text-align: center
+style: bold
+z-index: 2
+classes: gradient-text
+
+-- ftd.text: WHAT I'VE BEEN WORKING ON
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+width: fill-container
+text-align: center
+z-index: 2
+
+-- ftd.container:
+anchor.id: projects-heading-container
+top.percent: 50
+left.percent: 50
+height.fixed.px: 130
+width.fixed.px: 130
+z-index: 1
+border-width.px: 1
+border-color: #4b4b4b
+classes: section-title__square
+
+-- end: ftd.container
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- project-card.wrapper: Makesurge
+project-id: makesurge-project
+z-index: 4
+title-color: #A987FF
+subtitle: A Place that surge your potential
+background-img: $assets.files.assets.makesurge-bg.png
+pic-1: $assets.files.assets.makesurge-pic-1.png
+pic-2: $assets.files.assets.makesurge-pic-2.png
+
+-- project-card.wrapper: Doc Master
+project-id: docmaster-project
+z-index: 5
+title-color: #57B7FF
+subtitle: A personal chatbot for your product
+background-img: $assets.files.assets.docmaster-bg.png
+pic-1: $assets.files.assets.docmaster-pic-1.png
+pic-2: $assets.files.assets.docmaster-pic-2.png
+
+-- end: ftd.column
+
+-- end: wrapper
+
+
+
